@@ -26,5 +26,12 @@ class Train
     else
       'diesel'
     end
+
+    # Method to calculate trips distance based on duration.
+    #
+    # Method doesn't take into account units for speed or duration.
+    def trip_distance(duration)
+      duration * speed
+    end
   end
 end
